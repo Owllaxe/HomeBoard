@@ -1,0 +1,17 @@
+# Runs the board's server from power-on, and restarts it if it ever stops.
+# install-pi.sh fills in USER and FOLDER.
+[Unit]
+Description=Home board server
+After=network.target
+
+[Service]
+User=USER
+WorkingDirectory=FOLDER
+ExecStart=/usr/bin/env node server.mjs
+Restart=always
+RestartSec=3
+Environment=NODE_ENV=production
+Environment=OLLAMA_MODEL=qwen3.5:4b
+
+[Install]
+WantedBy=multi-user.target

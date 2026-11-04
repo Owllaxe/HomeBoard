@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#14171A">
+<title>Home board</title>
+<link rel="preload" href="fonts/barlow-semi-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="board.css">
+</head>
+<body data-view="home">
+<main class="app" id="app">
+  <section class="pass" id="pass" aria-label="Next event" aria-live="polite">
+    <button class="pass-hit" id="pass-hit" type="button" aria-expanded="false" aria-controls="route" aria-label="Show the route map"></button>
+    <i class="pass-timer" id="pass-timer"></i>
+    <h1 class="pass-title" id="pass-title"></h1>
+    <dl class="segments" id="segments"></dl>
+    <div class="pass-gap" id="pass-gap"><p class="pass-weather" id="pass-weather"></p></div>
+    <button class="stub-change" id="stub-change" type="button" hidden></button>
+    <div class="stub" id="stub">
+      <div class="tear" id="tear" aria-hidden="true"></div>
+      <div class="times">
+        <div class="time-leave">
+          <p class="stub-label" id="stub-label"></p>
+          <p class="stub-time" id="stub-time"></p>
+        </div>
+        <div class="time-now">
+          <p class="stub-label">Now</p>
+          <time class="stub-time" id="board-clock"></time>
+        </div>
+      </div>
+      <div class="stub-foot">
+        <p class="stub-sub" id="stub-sub"></p>
+        <button class="pass-skip" id="pass-skip" type="button" hidden>Skip</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="stage" id="stage">
+    <!-- The map stays still underneath. The board slides off it. -->
+    <section class="panel route" id="route" aria-label="Route map">
+      <header class="board-head">
+        <h2 id="route-title"></h2>
+        <button class="head-link" id="route-close" type="button">Back to list</button>
+      </header>
+      <svg class="map" id="map" viewBox="0 0 640 540" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Map of the routes with live train positions"></svg>
+      <p class="route-status" id="route-status" aria-live="polite"></p>
+      <ol class="options" id="options" aria-label="Ways to get there"></ol>
+    </section>
+
+    <section class="panel board" id="board" aria-label="Today and coming up">
+      <div class="lists" id="lists">
+        <section class="list">
+          <header class="board-head">
+            <h2 id="board-date"></h2>
+            <span class="head-links">
+              <button class="head-link" id="send-open" type="button">Send</button>
+              <button class="head-link" id="menu-open" type="button">Menu</button>
+              <button class="head-link" id="week-open" type="button">This week</button>
+            </span>
+          </header>
+          <ol class="rows scroll-y" id="schedule" data-empty="Nothing else today"></ol>
+          <button class="more" id="schedule-more" type="button" hidden></button>
+          <p class="board-notice" id="board-notice" role="status" hidden></p>
+          <div class="trains" id="trains" aria-label="Live trains"></div>
+        </section>
+        <section class="list is-tasks">
+          <header class="board-head">
+            <h2>Tasks</h2>
+            <span class="head-links">
+              <button class="head-link" id="tasks-more" type="button" hidden></button>
+              <button class="head-link" id="tasks-open" type="button">All tasks</button>
+            </span>
+          </header>
+          <ol class="rows scroll-y" id="tasks" data-empty="Nothing due"></ol>
+        </section>
+      </div>
+    </section>
+
+    <section class="panel week" id="week" aria-label="This week">
+      <header class="board-head">
+        <h2 id="week-title">This week</h2>
+        <span class="head-links">
+          <button class="head-link" id="timeline-open" type="button">By time</button>
+          <button class="head-link" id="week-close" type="button">Today</button>
+        </span>
+      </header>
+      <ol class="days scroll-y" id="days" data-empty="Nothing this week"></ol>
+    </section>
+
+    <!-- The week again, swiped further left: each day a row across the hours, each event as
+         wide as it lasts. -->
+    <section class="panel timeline" id="timeline" aria-label="This week by time">
+      <header class="board-head">
+        <h2 id="timeline-title">This week by time</h2>
+        <span class="head-links">
+          <button class="head-link" id="timeline-close" type="button">Back to week</button>
+          <button class="head-link" id="timeline-today" type="button">Today</button>
+        </span>
+      </header>
+      <div class="timeline-body scroll-x scroll-y" id="timeline-body">
+        <div class="timeline-inner" id="timeline-inner">
+          <div class="hours" id="hours" aria-hidden="true"></div>
+          <ol class="lanes" id="lanes"></ol>
+        </div>
+      </div>
+    </section>
+
+    <div class="toast" id="toast" role="status" hidden>
+      <span class="toast-text" id="toast-text"></span>
+      <button class="toast-undo" id="toast-undo" type="button">Undo</button>
+    </div>
+  </div>
+</main>
+<!-- Sits off the left edge. Swiping right moves the whole screen across to reveal it. -->
+  <section class="menu" id="menu" aria-label="Menu">
+    <div class="menu-main">
+    <header class="board-head">
+      <h2>Menu</h2>
+      <button class="head-link" id="menu-close" type="button">Back to today</button>
+    </header>
+    <ul class="menu-rows">
+      <li><button class="menu-row is-action" id="add-open" type="button">Add a task</button></li>
+      <li id="ask-row" hidden><button class="menu-row is-action" id="ask-open" type="button">Add or ask</button></li>
+      <li class="menu-row">
+        <span>Dim at night</span>
+        <span class="choices" id="set-dim" role="group" aria-label="Dim at night">
+          <button type="button" data-value="on">On</button><button type="button" data-value="off">Off</button>
+        </span>
+      </li>
+      <li class="menu-row">
+        <span>Extra time to leave</span>
+        <span class="choices" id="set-extra" role="group" aria-label="Extra time to leave">
+          <button type="button" data-value="0">None</button><button type="button" data-value="5">5 min</button><button type="button" data-value="10">10 min</button>
+        </span>
+      </li>
+      <li class="menu-row">
+        <span>Temperature</span>
+        <span class="choices" id="set-units" role="group" aria-label="Temperature">
+          <button type="button" data-value="f">°F</button><button type="button" data-value="c">°C</button>
+        </span>
+      </li>
+      <li><button class="menu-row is-action" id="open-home" type="button"><span>Home stations</span><span class="menu-value" id="menu-home"></span></button></li>
+      <li><button class="menu-row is-action" id="open-places" type="button"><span>Places</span><span class="menu-value" id="menu-places"></span></button></li>
+      <li><button class="menu-row is-action" id="open-links" type="button"><span>Calendar links</span><span class="menu-value" id="menu-links"></span></button></li>
+      <li><button class="menu-row is-action" id="open-repeating" type="button"><span>Repeating changes</span><span class="menu-value" id="menu-repeating"></span></button></li>
+      <li><button class="menu-row is-action" id="open-devices" type="button">Phone and laptop</button></li>
+      <li class="menu-row"><span>Live trains</span><span class="menu-value" id="menu-trains"></span></li>
+      <li><button class="menu-row is-action" id="menu-reload" type="button">Reload board</button></li>
+    </ul>
+    </div>
+    <div class="menu-side">
+    <section class="setup" id="setup" hidden>
+      <header class="board-head">
+        <h2 id="setup-title"></h2>
+        <button class="head-link" id="setup-close" type="button">Back</button>
+      </header>
+      <ul class="menu-rows setup-rows" id="setup-rows"></ul>
+    </section>
+    <form class="search" id="search" hidden>
+      <header class="board-head">
+        <h2><label for="search-text">Find a station</label></h2>
+        <button class="head-link" id="search-close" type="button">Cancel</button>
+      </header>
+      <input class="search-text" id="search-text" type="text" autocomplete="off" placeholder="Station name">
+      <ol class="search-results" id="search-results" data-empty="Type part of a station's name"></ol>
+      <div class="keyboard" id="search-keys" aria-label="On-screen keyboard"></div>
+    </form>
+    <form class="search" id="add" hidden>
+      <header class="board-head">
+        <h2><label for="add-text">Add a task</label></h2>
+        <button class="head-link" id="add-close" type="button">Cancel</button>
+      </header>
+      <input class="search-text" id="add-text" type="text" autocomplete="off" placeholder="What needs doing">
+      <span class="choices add-days" id="add-days" role="group" aria-label="Due"></span>
+      <div class="ask-actions"><button type="submit" class="primary">Add</button></div>
+      <div class="keyboard" id="add-keys" aria-label="On-screen keyboard"></div>
+    </form>
+    <form class="ask" id="ask" hidden>
+      <label for="ask-text">Add something, paste an assignment list, or ask a question</label>
+      <textarea id="ask-text" rows="5" placeholder="Mechanics is at Science Center"></textarea>
+      <div class="ask-actions">
+        <button type="button" id="ask-cancel">Cancel</button>
+        <button type="submit" class="primary">Send</button>
+      </div>
+      <div class="keyboard" id="keyboard" aria-label="On-screen keyboard"></div>
+    </form>
+    </div>
+  </section>
+<!-- A page of its own. Swiping up pushes the whole home screen up and brings this in below it. -->
+<section class="tasks-page" id="tasks-page" aria-label="All tasks">
+  <header class="board-head">
+    <h2>Tasks</h2>
+    <span class="head-links">
+      <button class="head-link" id="tp-add-task" type="button">Add a task</button>
+      <button class="head-link" id="tp-close" type="button">Today</button>
+    </span>
+  </header>
+  <div class="tp-body">
+    <div class="tp-list" id="tp-list">
+      <div class="tp-cats" id="tp-cats" role="group" aria-label="Category"></div>
+      <div class="tp-color" id="tp-color" hidden></div>
+      <ol class="rows tp-rows scroll-y" id="tp-rows" data-empty="Nothing here"></ol>
+      <button class="more" id="tp-rows-more" type="button" hidden></button>
+    </div>
+    <div class="tp-side">
+      <div class="tp-detail" id="tp-detail"></div>
+      <form class="search tp-entry" id="tp-entry" hidden>
+        <header class="board-head">
+          <h2><label for="tp-entry-text" id="tp-entry-label"></label></h2>
+          <button class="head-link" id="tp-entry-close" type="button">Cancel</button>
+        </header>
+        <input class="search-text" id="tp-entry-text" type="text" autocomplete="off">
+        <div class="tp-when" id="tp-when">
+          <span class="stepper">
+            <button type="button" id="tp-earlier" aria-label="A day earlier">−</button>
+            <span id="tp-day"></span>
+            <button type="button" id="tp-later" aria-label="A day later">+</button>
+          </span>
+          <span class="choices"><button type="button" id="tp-no-date">No date</button></span>
+        </div>
+        <p class="tp-entry-problem" id="tp-entry-problem" role="alert"></p>
+        <div class="ask-actions"><button type="submit" class="primary">Add</button></div>
+        <div class="keyboard" id="tp-keys" aria-label="On-screen keyboard"></div>
+      </form>
+    </div>
+  </div>
+  <div class="toast" id="tp-toast" role="status" hidden>
+    <span class="toast-text"></span>
+    <button class="toast-undo" type="button">Undo</button>
+  </div>
+</section>
+<!-- On a laptop or phone: the send page beside the board, for tasks and schedule changes. -->
+<aside class="send-drawer" id="send-drawer" aria-label="Send to board" hidden>
+  <header class="board-head">
+    <h2>Send to board</h2>
+    <button class="head-link" id="send-close" type="button">Close</button>
+  </header>
+  <iframe class="send-frame" id="send-frame" title="Send to board"></iframe>
+</aside>
+<!-- A laptop or phone opening the board enters the code from the board's menu once. -->
+<form class="pair-screen" id="pair" hidden>
+  <h1>Connect to your board</h1>
+  <label for="pair-code">On the board, swipe right and tap Phone and laptop for the code. Each device only needs it once.</label>
+  <input class="search-text" id="pair-code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="6 digits">
+  <p class="pair-problem" id="pair-problem" role="alert"></p>
+  <div class="ask-actions"><button type="submit" class="primary">Connect</button></div>
+</form>
+<script src="mta-network.js"></script>
+<script src="mta.js"></script>
+<script src="routes.js"></script>
+<script src="weather.js"></script>
+<script src="map.js"></script>
+<script src="board.js"></script>
+<script src="app.js"></script>
+<!-- The scene picker, for checking every state. The board runs without it. -->
+<script src="scenes.js"></script>
+</body>
+</html>

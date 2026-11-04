@@ -1,0 +1,51 @@
+@font-face{font-family:"Barlow";src:url(fonts/barlow-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Barlow";src:url(fonts/barlow-latin-500-normal.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Barlow";src:url(fonts/barlow-latin-700-normal.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Barlow Semi Condensed";src:url(fonts/barlow-semi-condensed-latin-700-normal.woff2) format("woff2");font-weight:700;font-display:swap}
+
+:root{--slate:#14171A;--slate-up:#20252A;--hair:#30363D;--text:#F4F5F6;--steel:#A7AFB8;--press:#D5D8DC;--alert:#FF6A61;--display:"Barlow Semi Condensed","Arial Narrow",Arial,sans-serif;--body:"Barlow",Arial,sans-serif}
+*{box-sizing:border-box;margin:0}
+body{background:var(--slate);color:var(--text);font:400 1.125rem/1.35 var(--body);font-variant-numeric:tabular-nums;-webkit-font-smoothing:antialiased}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+ol{list-style:none;padding:0}
+[hidden]{display:none!important}
+::selection{background:var(--text);color:var(--slate)}
+:focus-visible{outline:2px solid var(--text);outline-offset:2px}
+
+.page{max-width:40rem;margin:0 auto;padding:1.25rem 1rem 3rem}
+h1{font:700 2rem/1.1 var(--display);padding-bottom:.75rem;margin-bottom:1rem;border-bottom:2px solid var(--text)}
+.hint{display:block;color:var(--steel)}
+.problem{color:var(--alert);font-weight:500}
+.problem:empty{display:none}
+
+.pair,.compose{display:flex;flex-direction:column;gap:.75rem}
+.pair label{font-size:1.375rem;font-weight:500}
+input,textarea{width:100%;padding:.75rem 1rem;background:var(--slate-up);border:1px solid var(--hair);caret-color:var(--text)}
+input{min-height:3.5rem;font-size:1.5rem;letter-spacing:.08em}
+textarea{resize:vertical;line-height:1.35}
+::placeholder{color:var(--steel)}
+
+.modes{display:flex;margin-bottom:1rem}
+.modes button{flex:1;min-height:3.5rem;padding:0 .5rem;background:none;border:1px solid var(--steel);font-weight:500}
+.modes button+button{border-left:0}
+.modes button:active{background:var(--hair)}
+.modes button[aria-pressed=true]{background:var(--text);border-color:var(--text);color:var(--slate);font-weight:700}
+
+.send{min-height:3.5rem;background:var(--text);border:1px solid var(--text);color:var(--slate);font-weight:700}
+.send:active{background:var(--press)}
+.send:disabled{opacity:.5;cursor:default}
+
+.waiting{margin-top:1.25rem;padding:.75rem 0;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);color:var(--steel)}
+.thread{display:flex;flex-direction:column;margin-top:1.25rem}
+.message{padding:.875rem 0;border-bottom:1px solid var(--hair)}
+.message p{white-space:pre-wrap;overflow-wrap:anywhere}
+.message .meta{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-top:.25rem;font-size:1rem;color:var(--steel)}
+.message.is-board p:first-child{font-weight:500}
+.message.is-failed .state{color:var(--alert)}
+.retry{min-height:2.75rem;padding:0 .875rem;background:none;border:1px solid var(--steel);font-size:1rem;font-weight:500}
+.retry:active{background:var(--hair)}
+
+/* Inside the board on a laptop: the board's panel has the heading */
+.embedded .page{padding-top:.25rem}
+.embedded h1{display:none}

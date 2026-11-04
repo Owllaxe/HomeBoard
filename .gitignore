@@ -1,0 +1,8 @@
+node_modules/
+# Holds your private calendar links, access code and tasks
+data/
+# Local tool settings and caches, which can hold paths and screenshots of real data
+.claude/settings.local.json
+.impeccable/hook.cache.json
+.impeccable/questions/
+.impeccable/review/

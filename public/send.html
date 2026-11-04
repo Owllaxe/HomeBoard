@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#14171A">
+<title>Send to board</title>
+<link rel="stylesheet" href="send.css">
+</head>
+<body>
+<main class="page">
+  <h1>Send to board</h1>
+
+  <form class="pair" id="pair" hidden>
+    <label for="pair-code">Enter the code from the board's menu</label>
+    <p class="hint">On the board, swipe right, then tap Phone and laptop. You only need to do this once on each device.</p>
+    <input id="pair-code" inputmode="numeric" autocomplete="off" maxlength="6" placeholder="6 digits">
+    <p class="problem" id="pair-problem" role="alert"></p>
+    <button class="send" type="submit">Connect</button>
+  </form>
+
+  <div id="main" hidden>
+    <div class="modes" role="group" aria-label="What are you sending">
+      <button type="button" data-kind="assignments">Assignments</button>
+      <button type="button" data-kind="chat">Change my schedule</button>
+    </div>
+    <form class="compose" id="compose">
+      <label class="hint" for="text" id="prompt"></label>
+      <textarea id="text" rows="7"></textarea>
+      <p class="problem" id="problem" role="alert"></p>
+      <button class="send" type="submit" id="send">Send</button>
+    </form>
+    <p class="waiting" id="waiting" hidden>The AI isn't connected yet. Anything you send is saved and will be worked through in order once it is.</p>
+    <ol class="thread" id="thread" aria-label="Conversation" aria-live="polite"></ol>
+  </div>
+</main>
+<script src="send.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Category standard sketch</title>
+<style>
+*{box-sizing:border-box;margin:0}
+html,body{width:1280px;height:800px;overflow:hidden;background:#101418;color:#E6E9EC;font-family:system-ui,"Segoe UI",Arial,sans-serif;font-variant-numeric:tabular-nums}
+.grid{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:200px 1fr 1fr;gap:18px;padding:24px;height:800px}
+.card{background:#1A2027;border-radius:14px;padding:22px 24px;overflow:hidden}
+.card h2{font-size:17px;color:#8E98A3;font-weight:600;margin-bottom:12px}
+.clock{grid-column:span 1}
+.clock .t{font-size:84px;font-weight:600;line-height:1}
+.clock .d{font-size:22px;color:#8E98A3;margin-top:10px}
+.next{grid-column:span 2;background:#1E3A5F}
+.next h2{color:#C8D7EA}
+.next .e{font-size:44px;font-weight:700}
+.next .l{font-size:26px;margin-top:10px;color:#C8D7EA}
+.today{grid-row:span 2}
+.r{display:flex;justify-content:space-between;font-size:22px;padding:9px 0;border-bottom:1px solid #2A323B}
+.r span:last-child{color:#8E98A3}
+</style>
+</head>
+<body>
+<div class="grid">
+  <div class="card clock"><div class="t">8:41</div><div class="d">Friday, October 30</div></div>
+  <div class="card next"><h2>Next up</h2><div class="e">Mechanics of Materials, 9:30</div><div class="l">Leave at 8:58 · F at 9:03 from 2 Av</div></div>
+  <div class="card today"><h2>Today</h2>
+    <div class="r"><span>Mechanics</span><span>9:30</span></div>
+    <div class="r"><span>Calculus III</span><span>11:00</span></div>
+    <div class="r"><span>Fluids lab</span><span>1:00</span></div>
+  </div>
+  <div class="card"><h2>Trains</h2><div class="r"><span>F to Brooklyn</span><span>5 min</span></div><div class="r"><span>F to Brooklyn</span><span>12 min</span></div><div class="r"><span>F to Brooklyn</span><span>22 min</span></div></div>
+  <div class="card"><h2>Due soon</h2><div class="r"><span>Statics HW 7</span><span>Sun</span></div><div class="r"><span>Lab report</span><span>Mon</span></div></div>
+  <div class="card" style="grid-column:span 2"><h2>To do</h2><div class="r"><span>Email Prof. Rao</span><span>today</span></div><div class="r"><span>Pay Con Ed bill</span><span>today</span></div></div>
+</div>
+</body>
+</html>

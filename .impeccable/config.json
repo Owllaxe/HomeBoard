@@ -1,0 +1,50 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-font-size",
+        "value": "14px",
+        "createdAt": "2026-10-30T22:36:23.158Z",
+        "reason": "Claude: 14px is the lower bound of the root rem clamp that scales the whole frame, not a type step"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/assigned.html"
+        ],
+        "createdAt": "2026-10-30T22:36:50.797Z",
+        "reason": "Claude: spent direction sketch, each deliberately drawn in its own font, not part of the built system"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/model-pick.html"
+        ],
+        "createdAt": "2026-10-30T22:36:50.998Z",
+        "reason": "Claude: spent direction sketch, each deliberately drawn in its own font, not part of the built system"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/challenger-yellow.html"
+        ],
+        "createdAt": "2026-10-30T22:36:51.220Z",
+        "reason": "Claude: spent direction sketch, each deliberately drawn in its own font, not part of the built system"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/challenger-pass.html"
+        ],
+        "createdAt": "2026-10-30T22:36:51.520Z",
+        "reason": "Claude: spent direction sketch, each deliberately drawn in its own font, not part of the built system"
+      }
+    ]
+  }
+}

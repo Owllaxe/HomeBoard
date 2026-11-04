@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pass and Board sketch</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=Barlow+Semi+Condensed:wght@500;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0}
+html,body{width:1280px;height:800px;overflow:hidden;background:#14171A;color:#F4F5F6;font-family:Barlow,Arial,sans-serif;font-variant-numeric:tabular-nums}
+.wrap{display:grid;grid-template-columns:540px 1fr;gap:36px;padding:36px;height:800px}
+.pass{background:#F4F5F6;color:#14171A;padding:30px 32px;display:flex;flex-direction:column}
+.pass .lbl{font-size:16px;font-weight:500;color:#5C6470;margin-bottom:4px}
+.pass h1{font:700 62px/1 "Barlow Semi Condensed",Arial,sans-serif;margin-bottom:28px}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:22px 24px;border-top:2px dashed #AEB4BB;padding-top:22px}
+.seg b{display:block;font:700 44px/1 "Barlow Semi Condensed",Arial,sans-serif}
+.tear{margin-top:auto;border-top:2px dashed #AEB4BB;padding-top:20px}
+.tear .big{font:700 118px/.9 "Barlow Semi Condensed",Arial,sans-serif;letter-spacing:-.02em}
+.tear .s{font-size:24px;font-weight:500;margin-top:8px}
+.board h2{font:700 26px "Barlow Semi Condensed",Arial,sans-serif;display:flex;justify-content:space-between;padding-bottom:14px;border-bottom:2px solid #F4F5F6}
+.r{display:grid;grid-template-columns:96px 1fr 150px;align-items:center;font-size:26px;padding:15px 0;border-bottom:1px solid #30363D}
+.r span:first-child{font-weight:700}
+.r span:last-child{color:#A7AFB8;text-align:right;font-size:21px}
+.r.chg span:last-child{color:#FF6A61;font-weight:700}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <section class="pass">
+    <div class="lbl">Next</div>
+    <h1>Mechanics of Materials</h1>
+    <div class="seg">
+      <div><div class="lbl">Starts</div><b>9:30</b></div>
+      <div><div class="lbl">Place</div><b>Science Center</b></div>
+      <div><div class="lbl">Train</div><b>F 9:03</b></div>
+      <div><div class="lbl">Arrive</div><b>9:22</b></div>
+    </div>
+    <div class="tear"><div class="lbl">Leave home</div><div class="big">8:58</div><div class="s">in 17 min</div></div>
+  </section>
+  <section class="board">
+    <h2><span>Friday October 30</span><span>8:41</span></h2>
+    <div class="r"><span>11:00</span><span>Calculus III</span><span>Math Building</span></div>
+    <div class="r chg"><span>1:00</span><span>Fluids lab</span><span>Room changed</span></div>
+    <div class="r"><span>4:05</span><span>Train home</span><span>estimate</span></div>
+    <div class="r"><span>Sun</span><span>Statics HW 7</span><span>WebAssign</span></div>
+    <div class="r"><span>Mon</span><span>Fluids lab report</span><span>Brightspace</span></div>
+    <div class="r"><span>Today</span><span>Email Prof. Rao</span><span>To do</span></div>
+    <div class="r"><span>Today</span><span>Pay Con Ed bill</span><span>To do</span></div>
+    <div class="r"><span>F</span><span>2 Av to Brooklyn</span><span>5, 12, 22 min</span></div>
+  </section>
+</div>
+</body>
+</html>

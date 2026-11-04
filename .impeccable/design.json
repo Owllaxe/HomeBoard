@@ -1,0 +1,847 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-30T22:35:08.903Z",
+  "title": "Design System: Home Board",
+  "extensions": {
+    "colorMeta": {
+      "alert": {
+        "role": "primary",
+        "displayName": "Change Red",
+        "canonical": "#FF6A61",
+        "tonalRamp": [
+          "#210000",
+          "#4e0003",
+          "#80000c",
+          "#b21c20",
+          "#db4843",
+          "#fe746a",
+          "#ffb3aa",
+          "#ffe9e6"
+        ]
+      },
+      "alert-ink": {
+        "role": "primary",
+        "displayName": "Change Red, Deep",
+        "canonical": "#BC2A20",
+        "tonalRamp": [
+          "#210000",
+          "#4e0000",
+          "#810000",
+          "#b21e16",
+          "#da493b",
+          "#fe7564",
+          "#ffb3a7",
+          "#ffe9e5"
+        ]
+      },
+      "alert-press": {
+        "role": "primary",
+        "displayName": "Change Red, Pressed",
+        "canonical": "#96201A",
+        "tonalRamp": [
+          "#200000",
+          "#4e0000",
+          "#810004",
+          "#a73229",
+          "#cf574a",
+          "#f27f71",
+          "#fcb5aa",
+          "#fee9e6"
+        ]
+      },
+      "alert-wash": {
+        "role": "primary",
+        "displayName": "Change Wash",
+        "canonical": "#3A1F20",
+        "tonalRamp": [
+          "#130808",
+          "#351d1e",
+          "#56393a",
+          "#775858",
+          "#9a7979",
+          "#bd9c9c",
+          "#d8c4c3",
+          "#f3eded"
+        ]
+      },
+      "alert-wash-press": {
+        "role": "primary",
+        "displayName": "Change Wash, Pressed",
+        "canonical": "#5A2A2A",
+        "tonalRamp": [
+          "#180505",
+          "#3e1717",
+          "#623131",
+          "#85514f",
+          "#a97170",
+          "#cb9593",
+          "#e2c0be",
+          "#f6eceb"
+        ]
+      },
+      "alert-flash": {
+        "role": "primary",
+        "displayName": "Change Wash, Pulse",
+        "canonical": "#6E2B2A",
+        "tonalRamp": [
+          "#1b0303",
+          "#460e10",
+          "#6c2928",
+          "#904946",
+          "#b56a66",
+          "#d78f8a",
+          "#eabdb9",
+          "#f9ebe9"
+        ]
+      },
+      "on-alert": {
+        "role": "primary",
+        "displayName": "Banner and Bullet White",
+        "canonical": "#FFFFFF",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "line-123": {
+        "role": "secondary",
+        "displayName": "Line 1/2/3 Red",
+        "canonical": "#EE352E",
+        "tonalRamp": [
+          "#210000",
+          "#4d0001",
+          "#810005",
+          "#b8010b",
+          "#e92f29",
+          "#ff7365",
+          "#feb3a9",
+          "#ffe9e5"
+        ]
+      },
+      "line-456": {
+        "role": "secondary",
+        "displayName": "Line 4/5/6 Green",
+        "canonical": "#00933C",
+        "tonalRamp": [
+          "#001002",
+          "#002f0d",
+          "#01511e",
+          "#00762e",
+          "#199c45",
+          "#55bf6c",
+          "#a0daa9",
+          "#e3f4e5"
+        ]
+      },
+      "line-7": {
+        "role": "secondary",
+        "displayName": "Line 7 Purple",
+        "canonical": "#B933AD",
+        "tonalRamp": [
+          "#1b0019",
+          "#43003e",
+          "#710069",
+          "#a01095",
+          "#c641ba",
+          "#e96edb",
+          "#f6adeb",
+          "#fee6f9"
+        ]
+      },
+      "line-ace": {
+        "role": "secondary",
+        "displayName": "Line A/C/E Blue",
+        "canonical": "#0039A6",
+        "tonalRamp": [
+          "#000330",
+          "#001b62",
+          "#00359d",
+          "#2058c7",
+          "#417cee",
+          "#72a3ff",
+          "#adcafe",
+          "#e6effe"
+        ]
+      },
+      "line-bdfm": {
+        "role": "secondary",
+        "displayName": "Line B/D/F/M Orange",
+        "canonical": "#FF6319",
+        "tonalRamp": [
+          "#1d0200",
+          "#451200",
+          "#722500",
+          "#a43900",
+          "#d94f02",
+          "#ff7741",
+          "#ffb59a",
+          "#ffe9e1"
+        ]
+      },
+      "line-g": {
+        "role": "secondary",
+        "displayName": "Line G Green",
+        "canonical": "#6CBE45",
+        "tonalRamp": [
+          "#011000",
+          "#0e2d00",
+          "#1f4f00",
+          "#317300",
+          "#489915",
+          "#70bc4e",
+          "#acd89a",
+          "#e6f3e0"
+        ]
+      },
+      "line-jz": {
+        "role": "secondary",
+        "displayName": "Line J/Z Brown",
+        "canonical": "#996633",
+        "tonalRamp": [
+          "#170700",
+          "#391d00",
+          "#613600",
+          "#865420",
+          "#aa7643",
+          "#cc996a",
+          "#e2c3a7",
+          "#f6ede4"
+        ]
+      },
+      "line-l": {
+        "role": "secondary",
+        "displayName": "Line L Grey",
+        "canonical": "#A7A9AC",
+        "tonalRamp": [
+          "#0a0b0c",
+          "#242527",
+          "#404245",
+          "#5f6164",
+          "#808285",
+          "#a3a5a8",
+          "#c8c9cb",
+          "#eeeeef"
+        ]
+      },
+      "line-nqrw": {
+        "role": "secondary",
+        "displayName": "Line N/Q/R/W Yellow",
+        "canonical": "#FCCC0A",
+        "tonalRamp": [
+          "#110a00",
+          "#2f2400",
+          "#514000",
+          "#765e00",
+          "#9e7f04",
+          "#c7a005",
+          "#e0c77f",
+          "#f6eed9"
+        ]
+      },
+      "line-s": {
+        "role": "secondary",
+        "displayName": "Line S Grey",
+        "canonical": "#808183",
+        "tonalRamp": [
+          "#0b0b0c",
+          "#242526",
+          "#414244",
+          "#606163",
+          "#818284",
+          "#a4a5a7",
+          "#c8c9ca",
+          "#eeeeef"
+        ]
+      },
+      "stub-walk": {
+        "role": "secondary",
+        "displayName": "Walking Stub",
+        "canonical": "#50585F",
+        "tonalRamp": [
+          "#090c0e",
+          "#20262b",
+          "#3b434a",
+          "#5a6269",
+          "#7b848b",
+          "#9ea6ad",
+          "#c5cace",
+          "#edeff0"
+        ]
+      },
+      "slate": {
+        "role": "neutral",
+        "displayName": "Slate",
+        "canonical": "#14171A",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#232528",
+          "#3f4246",
+          "#5e6265",
+          "#7f8387",
+          "#a2a5a9",
+          "#c7c9cc",
+          "#eeeeef"
+        ]
+      },
+      "slate-up": {
+        "role": "neutral",
+        "displayName": "Slate, Raised",
+        "canonical": "#20252A",
+        "tonalRamp": [
+          "#090b0e",
+          "#21262a",
+          "#3d4348",
+          "#5c6268",
+          "#7d8389",
+          "#a0a6ac",
+          "#c6cacd",
+          "#edeef0"
+        ]
+      },
+      "hair": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#30363D",
+        "tonalRamp": [
+          "#090b0e",
+          "#21262b",
+          "#3c434a",
+          "#5b626a",
+          "#7c838b",
+          "#9fa6ae",
+          "#c5cace",
+          "#edeef0"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Board Text",
+        "canonical": "#F4F5F6",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242526",
+          "#414243",
+          "#606162",
+          "#818283",
+          "#a4a5a6",
+          "#c8c9ca",
+          "#eeeeee"
+        ]
+      },
+      "steel": {
+        "role": "neutral",
+        "displayName": "Steel",
+        "canonical": "#A7AFB8",
+        "tonalRamp": [
+          "#090b0e",
+          "#20262c",
+          "#3c434a",
+          "#5b626a",
+          "#7c838c",
+          "#9fa6ae",
+          "#c5cacf",
+          "#edeff0"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Pass Paper",
+        "canonical": "#F4F5F6",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242526",
+          "#414243",
+          "#606162",
+          "#818283",
+          "#a4a5a6",
+          "#c8c9ca",
+          "#eeeeee"
+        ]
+      },
+      "carbon": {
+        "role": "neutral",
+        "displayName": "Carbon",
+        "canonical": "#2B3138",
+        "tonalRamp": ["#0c0e10", "#20252a", "#3b4249", "#586169", "#78828b", "#9aa4ad", "#bfc7ce", "#e6eaed"]
+      },
+      "carbon-rule": {
+        "role": "neutral",
+        "displayName": "Carbon Rule",
+        "canonical": "#49525B",
+        "tonalRamp": ["#0c0e10", "#20252a", "#3b4249", "#586169", "#78828b", "#9aa4ad", "#bfc7ce", "#e6eaed"]
+      },
+      "carbon-ring": {
+        "role": "neutral",
+        "displayName": "Carbon Ring",
+        "canonical": "#7B848D",
+        "tonalRamp": ["#0c0e10", "#20252a", "#3b4249", "#586169", "#78828b", "#9aa4ad", "#bfc7ce", "#e6eaed"]
+      },
+      "press": {
+        "role": "neutral",
+        "displayName": "Light Press",
+        "canonical": "#D5D8DC",
+        "tonalRamp": [
+          "#0a0b0c",
+          "#232528",
+          "#404245",
+          "#5f6165",
+          "#808286",
+          "#a3a5a9",
+          "#c8c9cb",
+          "#eeeeef"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#14171A",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#232528",
+          "#3f4246",
+          "#5e6265",
+          "#7f8387",
+          "#a2a5a9",
+          "#c7c9cc",
+          "#eeeeef"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "#50585F",
+        "tonalRamp": [
+          "#090c0e",
+          "#20262b",
+          "#3b434a",
+          "#5a6269",
+          "#7b848b",
+          "#9ea6ad",
+          "#c5cace",
+          "#edeff0"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Paper Rule",
+        "canonical": "#CDD1D5",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#232528",
+          "#3f4246",
+          "#5e6265",
+          "#7f8386",
+          "#a2a5a9",
+          "#c7c9cb",
+          "#eeeeef"
+        ]
+      },
+      "notch-ring": {
+        "role": "neutral",
+        "displayName": "Notch Ring",
+        "canonical": "#858D94",
+        "tonalRamp": [
+          "#090c0e",
+          "#20262b",
+          "#3c4349",
+          "#5b6269",
+          "#7c838a",
+          "#9ea6ad",
+          "#c5cace",
+          "#edeff0"
+        ]
+      },
+      "night-ground": {
+        "role": "neutral",
+        "displayName": "Night Ground",
+        "canonical": "#000000",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "night-paper": {
+        "role": "neutral",
+        "displayName": "Night Paper",
+        "canonical": "#1C2024",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#222529",
+          "#3e4347",
+          "#5d6267",
+          "#7e8388",
+          "#a1a6aa",
+          "#c6c9cc",
+          "#eeeeef"
+        ]
+      },
+      "night-ink": {
+        "role": "neutral",
+        "displayName": "Night Ink",
+        "canonical": "#C7CDD3",
+        "tonalRamp": [
+          "#090b0d",
+          "#222629",
+          "#3e4347",
+          "#5d6267",
+          "#7d8389",
+          "#a0a6ab",
+          "#c6c9cd",
+          "#edeeef"
+        ]
+      },
+      "night-ring": {
+        "role": "neutral",
+        "displayName": "Night Ring",
+        "canonical": "#4A5057",
+        "tonalRamp": [
+          "#090b0e",
+          "#21262b",
+          "#3d4349",
+          "#5c6269",
+          "#7c838b",
+          "#9fa6ad",
+          "#c6c9ce",
+          "#edeef0"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "stub-time": {
+        "displayName": "Stub Time",
+        "purpose": "The solid leave time beside the outlined current time."
+      },
+      "pass-title": {
+        "displayName": "Pass Title",
+        "purpose": "The event name on the pass."
+      },
+      "segment-value": {
+        "displayName": "Segment Value",
+        "purpose": "Starts, Place, Train or Walk, and Arrive values."
+      },
+      "train-minutes": {
+        "displayName": "Train Minutes",
+        "purpose": "Minutes in the live trains strip."
+      },
+      "board-head": {
+        "displayName": "Board Head",
+        "purpose": "The date and clock."
+      },
+      "row": {
+        "displayName": "Row",
+        "purpose": "Row titles, with the time column in 700."
+      },
+      "stub-sub": {
+        "displayName": "Stub Sub",
+        "purpose": "The line under the leave time."
+      },
+      "control": {
+        "displayName": "Control",
+        "purpose": "Control labels."
+      },
+      "row-detail": {
+        "displayName": "Row Detail",
+        "purpose": "Right-hand row detail."
+      },
+      "change": {
+        "displayName": "Change",
+        "purpose": "The change banner wording."
+      },
+      "bullet": {
+        "displayName": "Bullet",
+        "purpose": "The letter in a line bullet."
+      },
+      "field-label": {
+        "displayName": "Field Label",
+        "purpose": "The word naming a segment or the leave time, in place."
+      },
+      "key": {
+        "displayName": "Key",
+        "purpose": "Letters on the touch-mode keyboard."
+      },
+      "small-action": {
+        "displayName": "Small Action",
+        "purpose": "Dismiss and Try again, and the change banner and train bar on a phone."
+      },
+      "change-cue": {
+        "displayName": "Change Cue",
+        "purpose": "The Got it cue on the change banner, and row detail on a phone."
+      },
+      "phone-stub-time": {
+        "displayName": "Phone Stub Time",
+        "purpose": "The leave time and current time on a phone."
+      },
+      "phone-stub-words": {
+        "displayName": "Phone Stub Words",
+        "purpose": "Leave now on a phone."
+      },
+      "map-label": {
+        "displayName": "Map Label",
+        "purpose": "Station and place names on the route map."
+      },
+      "map-train-yours": {
+        "displayName": "Map Train, Yours",
+        "purpose": "The line letter on your train's marker."
+      },
+      "phone-pass-title": {
+        "displayName": "Phone Pass Title",
+        "purpose": "The event name on a phone."
+      },
+      "landscape-pass-title": {
+        "displayName": "Landscape Pass Title",
+        "purpose": "The event name on a landscape phone."
+      }
+    },
+    "shadows": [
+      {
+        "name": "pass",
+        "value": "0 .75rem 2rem rgba(0,0,0,.35)",
+        "purpose": "The only shadow in the system, under the pass. Removed at night."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-settle",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "Rerank slide, the lift onto the pass and the pass entrance."
+      },
+      {
+        "name": "rerank",
+        "value": "520ms",
+        "purpose": "A row sliding from its old position to its new one."
+      },
+      {
+        "name": "lift-to-pass",
+        "value": "420ms",
+        "purpose": "The leaving row travelling toward the pass while fading."
+      },
+      {
+        "name": "pass-entrance",
+        "value": "460ms after 120ms",
+        "purpose": "Title and segments sliding in 1.5rem from the right."
+      },
+      {
+        "name": "row-enter",
+        "value": "320ms ease-out",
+        "purpose": "Opacity fade for a new row."
+      },
+      {
+        "name": "stub-colour",
+        "value": "400ms ease-out",
+        "purpose": "The stub taking the line colour."
+      },
+      {
+        "name": "notch-fill",
+        "value": "500ms ease-out",
+        "purpose": "A notch changing from live to spent."
+      },
+      {
+        "name": "change-pulse",
+        "value": "900ms ease-out, 2 cycles",
+        "purpose": "A changed row arriving, then holding."
+      },
+      {
+        "name": "breathe",
+        "value": "1.6s ease-in-out, infinite",
+        "purpose": "The label of a busy AI job."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "frame",
+        "value": "wider than 860px, taller than 560px, landscape"
+      },
+      {
+        "name": "stacked",
+        "value": "(max-width:860px),(max-height:560px),(orientation:portrait)"
+      },
+      {
+        "name": "wide-stacked",
+        "value": "stacked conditions at (min-width:640px)"
+      },
+      {
+        "name": "landscape-phone",
+        "value": "(max-height:560px) and (orientation:landscape)"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Stub with live tear",
+      "kind": "custom",
+      "refersTo": "stub-walking",
+      "description": "The signature: 30 notches, one per minute. Live minutes are punched holes, spent minutes are rings.",
+      "html": "<div class=\"ds-stub\"><div class=\"ds-tear\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><p class=\"ds-label\">Leave home</p><p class=\"ds-time\">8:58</p><p class=\"ds-sub\">in 17 min</p></div>",
+      "css": ".ds-stub{background:var(--paper,#F4F5F6);color:var(--ink,#14171A);padding:0 2rem 1.75rem;font-family:\"Barlow\",Arial,sans-serif;font-variant-numeric:tabular-nums} .ds-stub p{margin:0} .ds-tear{display:grid;grid-template-columns:repeat(30,1fr);justify-items:center;align-items:center;height:.75rem} .ds-tear i{width:.6875rem;height:.6875rem;border-radius:50%;border:1.5px solid var(--notch-ring,#858D94);transition:background-color .5s ease-out} .ds-tear i.on{background:var(--slate,#14171A);border-color:var(--slate,#14171A)} .ds-tear{margin-bottom:1.25rem} .ds-label{font-size:1rem;font-weight:500;color:var(--ink-soft,#50585F)} .ds-time{font-family:\"Barlow Semi Condensed\",\"Arial Narrow\",Arial,sans-serif;font-weight:700;font-size:7.375rem;line-height:.9;letter-spacing:-.02em} .ds-sub{font-size:1.5rem;font-weight:500;margin-top:.5rem}"
+    },
+    {
+      "name": "Stub within five minutes",
+      "kind": "custom",
+      "refersTo": "stub-walking",
+      "description": "The stub in the train line's colour. Light text on A/C/E, 7 and J/Z; dark on the rest. Walking uses #50585F with light text.",
+      "html": "<div class=\"ds-stub-soon\"><div class=\"ds-tear-soon\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><p class=\"ds-soon-label\">Leave home</p><p class=\"ds-soon-time\">8:58</p><p class=\"ds-soon-sub\">in 3 min</p></div>",
+      "css": ".ds-stub-soon{--notch-ring:var(--slate,#14171A);background:#0039A6;color:#F4F5F6;padding:0 2rem 1.75rem;font-family:\"Barlow\",Arial,sans-serif;font-variant-numeric:tabular-nums;transition:background-color .4s ease-out} .ds-stub-soon p{margin:0} .ds-tear-soon{display:grid;grid-template-columns:repeat(30,1fr);justify-items:center;align-items:center;height:.75rem} .ds-tear-soon i{width:.6875rem;height:.6875rem;border-radius:50%;border:1.5px solid var(--notch-ring,#858D94);transition:background-color .5s ease-out} .ds-tear-soon i.on{background:var(--slate,#14171A);border-color:var(--slate,#14171A)} .ds-tear-soon{margin-bottom:1.25rem} .ds-soon-label{font-size:1rem;font-weight:500} .ds-soon-time{font-family:\"Barlow Semi Condensed\",\"Arial Narrow\",Arial,sans-serif;font-weight:700;font-size:7.375rem;line-height:.9;letter-spacing:-.02em} .ds-soon-sub{font-size:1.5rem;font-weight:500;margin-top:.5rem}"
+    },
+    {
+      "name": "Estimated stub",
+      "kind": "custom",
+      "refersTo": "stub-walking",
+      "description": "An estimate: dashed tear, weight 500, and an about label. It never takes a line colour.",
+      "html": "<div class=\"ds-stub-est\"><div class=\"ds-tear-est\"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><p class=\"ds-est-label\">Leave home, about</p><p class=\"ds-est-time\">12:20</p><p class=\"ds-est-sub\">Exact train from 11:20</p></div>",
+      "css": ".ds-stub-est{background:var(--paper,#F4F5F6);color:var(--ink,#14171A);padding:0 2rem 1.75rem;font-family:\"Barlow\",Arial,sans-serif;font-variant-numeric:tabular-nums} .ds-stub-est p{margin:0} .ds-tear-est{display:grid;grid-template-columns:repeat(30,1fr);justify-items:center;align-items:center;height:.75rem;margin-bottom:1.25rem} .ds-tear-est i{width:.625rem;height:2px;background:var(--ink-soft,#50585F)} .ds-est-label{font-size:1rem;font-weight:500;color:var(--ink-soft,#50585F)} .ds-est-time{font-family:\"Barlow Semi Condensed\",\"Arial Narrow\",Arial,sans-serif;font-weight:500;font-size:7.375rem;line-height:.9;letter-spacing:-.02em} .ds-est-sub{font-size:1.5rem;font-weight:500;margin-top:.5rem}"
+    },
+    {
+      "name": "Ruled segments",
+      "kind": "custom",
+      "refersTo": "pass",
+      "description": "The labelled ticket fields on the pass, in a 5:7 table of ruled cells.",
+      "html": "<dl class=\"ds-segments\"><div><dt>Starts</dt><dd>9:30</dd></div><div><dt>Place</dt><dd>Science Center</dd></div><div><dt>Train</dt><dd><span class=\"ds-seg-bullet\">F</span>9:03</dd></div><div><dt>Arrive</dt><dd>9:22</dd></div></dl>",
+      "css": ".ds-segments{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);margin:0;border-top:2px solid var(--rule,#CDD1D5);background:var(--paper,#F4F5F6);color:var(--ink,#14171A);font-family:\"Barlow\",Arial,sans-serif;font-variant-numeric:tabular-nums} .ds-segments>div{padding:.75rem 0;border-bottom:1px solid var(--rule,#CDD1D5)} .ds-segments>div:nth-child(odd){padding-right:1rem;border-right:1px solid var(--rule,#CDD1D5)} .ds-segments>div:nth-child(even){padding-left:1rem} .ds-segments dt{font-size:1rem;font-weight:500;color:var(--ink-soft,#50585F)} .ds-segments dd{margin:.25rem 0 0;font-family:\"Barlow Semi Condensed\",\"Arial Narrow\",Arial,sans-serif;font-weight:700;font-size:2.75rem;line-height:1.05;display:flex;align-items:baseline;gap:.625rem;white-space:nowrap} .ds-seg-bullet{display:inline-grid;place-items:center;align-self:center;width:2.5rem;height:2.5rem;border-radius:50%;background:#FF6319;color:#fff;font:700 1.625rem/1 \"Barlow\",Arial,sans-serif}"
+    },
+    {
+      "name": "Change banner",
+      "kind": "button",
+      "refersTo": "stub-change",
+      "description": "A change on the pass. It sits above the tear and holds until tapped.",
+      "html": "<button class=\"ds-change\" type=\"button\"><span>Your 9:03 is delayed. Take the 9:11.</span><span class=\"ds-change-cue\">Got it</span></button>",
+      "css": ".ds-change{display:flex;align-items:center;justify-content:space-between;gap:1rem;width:100%;min-height:3.5rem;padding:.5rem 2rem;background:var(--alert-ink,#BC2A20);color:#fff;border:0;text-align:left;font:700 1.3125rem/1.2 \"Barlow\",Arial,sans-serif;cursor:pointer} .ds-change:active{background:var(--alert-press,#96201A)} .ds-change:focus-visible{outline:2px solid var(--ink,#14171A);outline-offset:2px} .ds-change-cue{flex:none;font-size:1.0625rem;font-weight:500;text-decoration:underline;text-underline-offset:2px}"
+    },
+    {
+      "name": "Board rows",
+      "kind": "custom",
+      "refersTo": "board-row",
+      "description": "Rows on hairlines in a fixed column grid, with no panel. A changed row takes the wash and the whole row dismisses.",
+      "html": "<div class=\"ds-rows\"><div class=\"ds-row\"><span class=\"ds-row-time\">11:00</span><span>Calculus III</span><span class=\"ds-row-detail\">Math Building</span></div><button class=\"ds-row ds-row-changed\" type=\"button\"><span class=\"ds-row-time\">1:00</span><span>Fluids lab</span><span class=\"ds-row-detail\">Room changed: Lab Annex</span></button></div>",
+      "css": ".ds-rows{background:var(--slate,#14171A);color:var(--text,#F4F5F6);padding-inline:.75rem;font-family:\"Barlow\",Arial,sans-serif;font-variant-numeric:tabular-nums} .ds-row{display:grid;grid-template-columns:5.5rem minmax(0,1fr) auto;gap:1rem;align-items:center;width:100%;min-height:4rem;padding:.5rem 0;border:0;border-bottom:1px solid var(--hair,#30363D);background:none;color:inherit;font:inherit;font-size:1.625rem;line-height:1.15;text-align:left} .ds-row-time{font-weight:700} .ds-row-detail{color:var(--steel,#A7AFB8);font-size:1.3125rem;text-align:right;max-width:18rem} .ds-row-changed{background:var(--alert-wash,#3A1F20);margin:0 -.75rem;padding:.5rem .75rem;width:calc(100% + 1.5rem);cursor:pointer} .ds-row-changed .ds-row-detail{color:var(--alert,#FF6A61);font-weight:700} .ds-row-changed:active{background:#5A2A2A} .ds-row:focus-visible{outline:2px solid var(--text,#F4F5F6);outline-offset:2px}"
+    },
+    {
+      "name": "Live trains",
+      "kind": "chip",
+      "refersTo": "bullet",
+      "description": "Official line bullet, direction and next minutes in the strip below the rows.",
+      "html": "<div class=\"ds-trains\"><span class=\"ds-train\"><span class=\"ds-bullet\">F</span>Brooklyn<b>5 12 22</b> min</span></div>",
+      "css": ".ds-trains{display:flex;gap:2.25rem;align-items:center;min-height:4rem;padding:0 1rem;background:var(--slate,#14171A);color:var(--steel,#A7AFB8);font:400 1.3125rem \"Barlow\",Arial,sans-serif} .ds-train{display:flex;align-items:center;gap:.625rem;white-space:nowrap} .ds-train b{font:700 1.75rem/1 \"Barlow Semi Condensed\",\"Arial Narrow\",Arial,sans-serif;font-variant-numeric:tabular-nums;color:var(--text,#F4F5F6);margin-left:.25rem;word-spacing:.35em} .ds-bullet{display:inline-grid;place-items:center;flex:none;width:1.875rem;height:1.875rem;border-radius:50%;background:#FF6319;color:#fff;font:700 1.25rem/1 \"Barlow\",Arial,sans-serif}"
+    },
+    {
+      "name": "Add or ask",
+      "kind": "input",
+      "refersTo": "ask-open",
+      "description": "The one entry point for adding or asking, a raised bar at the foot of the board.",
+      "html": "<button class=\"ds-ask-open\" type=\"button\">Add or ask</button>",
+      "css": ".ds-ask-open{width:100%;min-height:3.5rem;background:var(--slate-up,#20252A);border:1px solid var(--hair,#30363D);color:var(--steel,#A7AFB8);padding:0 1.125rem;font:500 1.3125rem \"Barlow\",Arial,sans-serif;text-align:left;cursor:pointer} .ds-ask-open:hover{color:var(--text,#F4F5F6)} .ds-ask-open:active{background:var(--hair,#30363D)} .ds-ask-open:focus-visible{outline:2px solid var(--text,#F4F5F6);outline-offset:2px}"
+    },
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "action-primary",
+      "description": "The solid light action, used for Send.",
+      "html": "<button class=\"ds-action-primary\" type=\"button\">Send</button>",
+      "css": ".ds-action-primary{min-height:3.5rem;min-width:8rem;background:var(--text,#F4F5F6);color:var(--slate,#14171A);border:1px solid var(--text,#F4F5F6);font:700 1.3125rem \"Barlow\",Arial,sans-serif;cursor:pointer} .ds-action-primary:active{background:var(--press,#D5D8DC)} .ds-action-primary:focus-visible{outline:2px solid var(--text,#F4F5F6);outline-offset:2px}"
+    },
+    {
+      "name": "Secondary action",
+      "kind": "button",
+      "refersTo": "action-secondary",
+      "description": "The square steel-outlined action, used for Cancel.",
+      "html": "<button class=\"ds-action-secondary\" type=\"button\">Cancel</button>",
+      "css": ".ds-action-secondary{min-height:3.5rem;min-width:8rem;background:none;color:var(--text,#F4F5F6);border:1px solid var(--steel,#A7AFB8);font:500 1.3125rem \"Barlow\",Arial,sans-serif;cursor:pointer} .ds-action-secondary:active{background:var(--hair,#30363D)} .ds-action-secondary:focus-visible{outline:2px solid var(--text,#F4F5F6);outline-offset:2px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Ticket You Hold",
+    "overview": "The next event is a boarding pass: one sheet of paper on a slate ground, with the leave time below a tear line that counts down to the door. Everything else waits on a departure board beside it, ruled rows that rank themselves by time. The system is built to be read in two seconds from across a room, so the pass is the only object, the board is only lines, and colour appears when it changes what the owner does next.\n\nDensity is low and sizes are large. One paper object, one column of rows and one strip of live trains fill the frame, and a row that does not fit waits for the next page. The world refuses the grid of equal widget panels. Certainty is visible: a live time is heavy and punched, an estimate is lighter, dashed and labelled \"about\".\n\nProvisional: this system was recorded from a build on real data, with the AI box still to connect. The data shape behind it (including `leaveIn`, `estimate`, `change`, `train.line`, `night` and the row kinds) is a stand-in and may be renamed. The visual rules hold; the field names do not.",
+    "keyCharacteristics": [
+      "One paper pass on slate, holding the next event and the leave time.",
+      "A tear of 30 notches, one per minute, that doubles as the countdown.",
+      "Board rows on hairlines in a fixed column grid, with no panels.",
+      "One red family, spent on changes that hold until tapped.",
+      "A weight, a dash and the word \"about\" mark every estimate.",
+      "The whole frame scales in rem from one 1280x800 reference."
+    ],
+    "rules": [
+      {
+        "name": "The One Alarm Rule",
+        "body": "The red family marks changes, and nothing else competes with it. The one extension is the loss of live trains, a text-only line, because that changes every time on the board. A failed AI request is not a change and stays neutral.",
+        "section": "colors"
+      },
+      {
+        "name": "The Line Takes the Stub Rule",
+        "body": "Within five minutes of leaving, on an exact time, the stub fills with the train line's colour. Outside that window the stub is plain paper. An estimate never takes the colour.",
+        "section": "colors"
+      },
+      {
+        "name": "The Higher Ink Rule",
+        "body": "Stub text takes whichever of Pass Paper or Ink reads better on the line colour. That gives light text only on A/C/E, 7 and J/Z, and dark text on every other line. Line bullets are a separate matter: they keep the official livery, with white letters on all lines except the yellow N/Q/R/W.",
+        "section": "colors"
+      },
+      {
+        "name": "The Held Figures Rule",
+        "body": "Every number uses tabular figures, so clocks and countdowns never shift sideways. The CSS `font` shorthand resets this, so anything set with the shorthand that shows numbers must ask for tabular figures again.",
+        "section": "typography"
+      },
+      {
+        "name": "The Weight Is Certainty Rule",
+        "body": "A live time is 700. An estimated time is 500 in the same face and size. Weight alone never carries it: the dashed tear and \"about\" label go with it.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Frame Rule",
+        "body": "All sizes are in rem and the root is `clamp(14px, min(1.25vw, 2vh), 24px)`, so the board scales as one frame from 16px at 1280x800. Nothing in the two-column layout is sized in pixels except hairline strokes.",
+        "section": "layout"
+      },
+      {
+        "name": "The Whole Row Rule",
+        "body": "The frame never scrolls and never cuts a row. Rows that do not fit are held back, a steel \"N more\" control shows the next page, the last page offers \"Back to top\", and the board returns to the first page by itself after 30 seconds.",
+        "section": "layout"
+      },
+      {
+        "name": "The One Lifted Thing Rule",
+        "body": "Only the pass has a shadow, and it loses it at night. If a second thing seems to need lift, it belongs on the board's lines instead.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Tear Is the Clock Rule",
+        "body": "The tear is a countdown, not decoration. Never use it as a divider on any other surface, and never show notches that are not counting real minutes.",
+        "section": "components"
+      },
+      {
+        "name": "The Held Change Rule",
+        "body": "A change never times out. It stays lit until it is tapped, and a row keeps its change when it lifts onto the pass, so dismissing either clears both.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do make the next event the largest thing on screen, with the leave time at 7.375rem on the 16px root.",
+      "Do size everything in rem so the frame scales as one piece.",
+      "Do show an estimate with all three signs: weight 500, a dashed tear and an \"about\" label.",
+      "Do keep a change lit until it is tapped.",
+      "Do keep every wall control at 56px or more.",
+      "Do keep a row's identity when it moves, so reranks slide in place.",
+      "Do put the letter in every line bullet.",
+      "Do keep night as a darker, quieter version of the same layout."
+    ],
+    "donts": [
+      "Don't add cards, panels or widget grids to the board. Its only fills are controls, the changed row and the toast.",
+      "Don't use the red family for AI failures, emphasis, deadlines or decoration. Alert red is not Line 1/2/3 red, and neither stands in for the other.",
+      "Don't use line colours outside bullets and the stub.",
+      "Don't give an estimate the line colour, the notch count or \"Leave now\".",
+      "Don't let the wall scroll or cut a row in half.",
+      "Don't add a second shadow, or blur or backdrop effects of any kind.",
+      "Don't round anything other than the pass, or make circles of anything other than bullets, notches and cut-outs.",
+      "Don't time a change out or clear it on a wake tap.",
+      "Don't treat the white-on-livery pairing of a bullet as a precedent for text colour elsewhere."
+    ]
+  }
+}
